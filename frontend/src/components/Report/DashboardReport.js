@@ -11,8 +11,8 @@ const DashboardReport =()=>{
                 <h5 className="text-gray-900 text-xl font-medium mb-2"> </h5>
                 <p className="text-gray-700 text-base mb-4">
             
-                    Collection Amount: Rs 10000 <br />
-                    Collection Amount: Rs 9500
+                    Collection : Rs 10000 <br />
+                    Collected :  Rs 9500
                 </p>
                 
                 </div>
@@ -28,8 +28,8 @@ const DashboardReport =()=>{
                 <h5 className="text-gray-900 text-xl font-medium mb-2"> </h5>
                 <p className="text-gray-700 text-base mb-4">
             
-                    Collection Amount: Rs 10000 <br />
-                    Collection Amount: Rs 9500
+                    Collection : Rs 10000 <br />
+                    Collected :  Rs 9500
                 </p>
                 
                 </div>
@@ -45,8 +45,8 @@ const DashboardReport =()=>{
                 <h5 className="text-gray-900 text-xl font-medium mb-2"> </h5>
                 <p className="text-gray-700 text-base mb-4">
             
-                    Collection Amount: Rs 10000 <br />
-                    Collection Amount: Rs 9500
+                    Collection : Rs 10000 <br />
+                    Collected :  Rs 9500
                 </p>
                 
                 </div>

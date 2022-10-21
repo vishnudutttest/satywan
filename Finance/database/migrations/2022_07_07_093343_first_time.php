@@ -31,6 +31,7 @@ class FirstTime extends Migration
         Schema::create('Installment',function (Blueprint $table){
             $table->id();
             $table->integer('borrowId');
+            $table->integer('ownerId');
             $table->integer('instalmentNumber');
             $table->decimal('installmentAmount', $precision = 8, $scale = 2);
             $table->date('installmentDate');

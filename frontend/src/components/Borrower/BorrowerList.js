@@ -83,7 +83,9 @@ const BorrowerList = (props) => {
     <thead className='bg-[#7B7471C4] rounded-sm'>
       <tr>
         <th scope="col" className={thclass}>#</th>
-        <th scope="col" className={thclass}>name</th>
+        <th scope="col" className={thclass}>
+           name
+        </th>
         <th scope="col" className={thclass}>email</th>
         <th scope="col" className={thclass}>phone</th>
         <th scope="col"className={thclass} >address</th>
@@ -97,7 +99,11 @@ const BorrowerList = (props) => {
            
               {val.id}
             </th>
-        <td className={tdclass}>{val.name}</td>
+        <td className={tdclass}>  <NavLink
+            href="/borrowerprofile" 
+            >{val.name}
+            </NavLink>
+        </td>
         <td className={tdclass}>{val.email}</td>
         <td className={tdclass}>{val.phone}</td>
         <td className={tdclass}>{val.address}</td>
