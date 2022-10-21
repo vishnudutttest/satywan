@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react'
 import axios from '@/lib/axios'
 import { useRouter } from 'next/router'
-
+import NavLink from '@/components/NavLink'
 
 const BorrowerList = (props) => {
     
@@ -72,8 +72,13 @@ const BorrowerList = (props) => {
 
     return (
     <>    
+    
     <h2 className='p-8 inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200'>Borrower List</h2>
-   
+    <NavLink
+        href="/addborrower" 
+    >
+        Add New Borrower
+    </NavLink>
     <table className="border-collapse table-auto w-full text-sm" >
     <thead className='bg-[#7B7471C4] rounded-sm'>
       <tr>

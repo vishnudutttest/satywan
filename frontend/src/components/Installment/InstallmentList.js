@@ -84,10 +84,10 @@ const InstallmentList = (props) => {
     </thead>
     <tbody className=''>
       {Installments.map(val=>( <tr key={val.id} className={(val.paidStatus)?"bg-[#4ADE80]":"bg-[#FB7185]"}>
-        <th scope="row" className={ftd}>
-            <input className='p-4' checked={(val.paidStatus)?"checked":""} data-id={val.id} onClick={changeStatus} type="checkbox" /> 
-              {val.instalmentNumber}
-            </th>
+        <th scope="row" className={ftd} >
+            <input className='p-4' checked={(val.paidStatus)?"checked":""} data-id={val.id} onClick={changeStatus} type="checkbox" alt={'Click to update'} /> 
+            
+        </th>
         <td className={tdclass}>{val.installmentAmount}</td>
         <td className={tdclass}>{val.installmentDate}</td>
         <td className={tdclass}>{val.borrower.name}</td>
