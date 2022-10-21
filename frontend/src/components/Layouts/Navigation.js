@@ -31,6 +31,7 @@ const Navigation = ({ user }) => {
                         </div>
 
                         {/* Navigation Links */}
+                        {(user)?
                         <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                             <NavLink
                                 href="/dashboard"
@@ -38,12 +39,17 @@ const Navigation = ({ user }) => {
                                 Dashboard
                             </NavLink>
                             <NavLink
+                                href="/installmentlist"
+                                active={router.pathname === '/installmentlist'}>
+                                Installment
+                            </NavLink>
+                            <NavLink
                                 href="/borrower"
                                 active={router.pathname === '/borrower'}>
                                 Borrower
                             </NavLink>
-                            
                         </div>
+                        :''}
                     </div>
 
                     {/* Settings Dropdown */}
