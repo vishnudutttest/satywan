@@ -16,6 +16,7 @@ class BorrowerController extends Controller
 
     public function AddNew(Request $request)
     {
+        die('test');
         $validated = $request->validate([
             'name1' => 'required|max:255',
             'email' => 'email:rfc,dns',
@@ -27,9 +28,11 @@ class BorrowerController extends Controller
             'installmentAmount'=> 'required|integer',
             'installmentStartDate'=> 'required|date',
         ]);
+        die('test1');
         if(!$validated){
             return $validated;
         }
+        die('test');
         $borrower = New Borrowlist();
         $borrower->name  = $request->input('name1');
         $borrower->email  = $request->input('email'); 

@@ -25,6 +25,7 @@ class AddTriger extends Migration
         
         WHILE start_no_of_installment <= NEW.no_of_installment DO
         INSERT INTO installment SET borrowId = NEW.id,instalmentNumber=start_no_of_installment,installmentAmount=NEW.installmentAmount,
+        ownerId = NEW.userId,
         installmentDate=ins_date,paidStatus=0,created_at=CURRENT_TIMESTAMP,
         updated_at=CURRENT_TIMESTAMP;
         IF  NEW.intallmentType='daily' THEN
