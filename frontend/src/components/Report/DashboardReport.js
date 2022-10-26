@@ -1,4 +1,17 @@
+
+import { useState,useEffect } from 'react'
+import axios from '@/lib/axios'
 const DashboardReport =()=>{
+    const [Reports,SetReports] = useState([]);
+
+    useEffect(() => {
+        axios.get("/api/dashboard-report")
+        .then(res=>{
+            SetReports(res.data);
+        }).catch(res=>{
+            console.log("Error found in get borrower list");
+        })
+    },[]);
     return (<>
     <h2>Reports</h2>
     <div>
