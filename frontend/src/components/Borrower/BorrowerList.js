@@ -3,6 +3,7 @@ import axios from '@/lib/axios'
 import { useRouter } from 'next/router'
 import NavLink from '@/components/NavLink'
 
+
 const BorrowerList = (props) => {
     
     const router = useRouter();
@@ -96,11 +97,10 @@ const BorrowerList = (props) => {
     <tbody className=''>
       {Borrowers.map(val=>( <tr key={val.id} >
         <th scope="row" className={ftd}>
-           
               {val.id}
-            </th>
+        </th>
         <td className={tdclass}>  <NavLink
-            href="/borrowerprofile" 
+            href={"/borrower/"+val.id }
             >{val.name}
             </NavLink>
         </td>
