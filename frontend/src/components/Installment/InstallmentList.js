@@ -66,13 +66,13 @@ const InstallmentList = (props) => {
     const ftd = "border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-black-500 dark:text-slate-400";
     return (
     <>
-    <div>
+    <div id='filterBox'>
         Date : <input type="text" id="filterdate"  placeholder="YYYY-mm-dd" place/>
-        <button onClick={filterInstallment} className="rounded-full p-3 bg-[#7B7471C4] hover:rounded-lg">Filter Installment</button>
+        <button onClick={filterInstallment} id='FillterButton'>Filter Installment</button>
     </div>
-    <h2 className='p-8 inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200'>Installments List</h2>
+    <h2>Installments List</h2>
     <table className="border-collapse table-auto w-full text-sm" >
-    <thead className='bg-[#7B7471C4] rounded-sm'>
+    <thead id='tableHead' >
       <tr>
         <th scope="col" className={thclass}>Number</th>
         <th scope="col" className={thclass}>Amount</th>
@@ -82,10 +82,10 @@ const InstallmentList = (props) => {
         <th scope="col"className={thclass} >Paid Status</th>
       </tr>
     </thead>
-    <tbody className=''>
-      {Installments.map(val=>( <tr key={val.id} className={(val.paidStatus)?"bg-[#4ADE80]":"bg-[#FB7185]"}>
+    <tbody id='tableBody'>
+      {Installments.map(val=>( <tr key={val.id} className={(val.paidStatus)}>
         <th scope="row" className={ftd} >
-            <input className='p-4' checked={(val.paidStatus)?"checked":""} data-id={val.id} onClick={changeStatus} type="checkbox" alt={'Click to update'} /> 
+            <input className='p-4' id='checkBox' checked={(val.paidStatus)?"checked":""} data-id={val.id} onClick={changeStatus} type="checkbox" alt={'Click to update'} /> 
             
         </th>
         <td className={tdclass}>{val.installmentAmount}</td>
