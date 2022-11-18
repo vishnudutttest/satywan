@@ -3,6 +3,9 @@ import axios from '@/lib/axios'
 import { useRouter } from 'next/router'
 import NavLink from '@/components/NavLink'
 
+
+
+
 const BorrowerList = (props) => {
     
     const router = useRouter();
@@ -11,8 +14,10 @@ const BorrowerList = (props) => {
 
     useEffect(() => {
         axios.post("/api/borrower",ajaxdata)
+
         .then(res=>{
             SetBorrowers(res.data);
+            console.log(res.data);
         }).catch(res=>{
             console.log("Error found in get borrower list");
         })
@@ -66,41 +71,39 @@ const BorrowerList = (props) => {
       });
     }
     
-    const thclass = "border-solid border-2 border-black-600 border-b dark:border-slate-600  font-black font-bold p-4 pl-8 pt-4 pb-3 text-black-400 dark:text-slate-400 text-left";
-    const tdclass = "border-b border-slate-100 border-solid dark:border-slate-700 p-4 pl-8 text-black-500 dark:text-slate-400";
+    const thclass = "border-solid border-2 border-black-100 border-b dark:border-slate-100  font-black font-bold p-3 pl-5 pt-3 pb-3 text-black-400 dark:text-slate-400 text-left";
+    const tdclass = "border-b border-slate-100 border-solid dark:border-slate-700 p-2 pl-8 text-black-500 dark:text-slate-400";
     const ftd = "border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-black-500 dark:text-slate-400";
 
     return (
     <>    
     
     <h2 className='p-8 inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200'>Borrower List</h2>
-    <NavLink
-        href="/addborrower" 
-    >
-        Add New Borrower
-    </NavLink>
-    <table className="border-collapse table-auto w-full text-sm" >
-    <thead className='bg-[#7B7471C4] rounded-sm'>
+    <NavLink id='FillterButton'
+     href="/addborrower" 
+     >Add New Borrower</NavLink>
+    
+    <div id='table'>
+    <table className="border-collapse table-auto w-full text-sm"  >
+    <thead id='tableHead'>
       <tr>
-        <th scope="col" className={thclass}>#</th>
+        <th scope="col" className={thclass}>remove</th>
         <th scope="col" className={thclass}>
-           name
+           Name
         </th>
-        <th scope="col" className={thclass}>email</th>
-        <th scope="col" className={thclass}>phone</th>
-        <th scope="col"className={thclass} >address</th>
+        <th scope="col" className={thclass}>Email</th>
+        <th scope="col" className={thclass}>Phone</th>
+        <th scope="col"className={thclass} >Address</th>
         <th scope="col"className={thclass} >AmountGiven</th>
         <th scope="col"className={thclass} >Installment Start Date</th>
       </tr>
     </thead>
     <tbody className=''>
       {Borrowers.map(val=>( <tr key={val.id} >
-        <th scope="row" className={ftd}>
-           
-              {val.id}
-            </th>
-        <td className={tdclass}>  <NavLink
-            href="/borrowerprofile" 
+        <th scope="row" className={ftd}>1
+        </th>
+        <td className={tdclass}><NavLink
+            href={"/borrower/"+val.id }
             >{val.name}
             </NavLink>
         </td>
@@ -112,6 +115,7 @@ const BorrowerList = (props) => {
       </tr>))}
     </tbody>
   </table>
+  </div>
   </>
     )
 }

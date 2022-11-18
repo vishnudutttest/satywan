@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Borrowlist;
+use App\Models\installment;
 use Illuminate\Support\Facades\Auth;
 
 class BorrowerController extends Controller
@@ -16,7 +17,7 @@ class BorrowerController extends Controller
 
     public function AddNew(Request $request)
     {
-        die('test');
+       
         $validated = $request->validate([
             'name1' => 'required|max:255',
             'email' => 'email:rfc,dns',
@@ -28,11 +29,11 @@ class BorrowerController extends Controller
             'installmentAmount'=> 'required|integer',
             'installmentStartDate'=> 'required|date',
         ]);
-        die('test1');
+        
         if(!$validated){
             return $validated;
         }
-        die('test');
+        
         $borrower = New Borrowlist();
         $borrower->name  = $request->input('name1');
         $borrower->email  = $request->input('email'); 
@@ -45,6 +46,13 @@ class BorrowerController extends Controller
         $borrower->installmentStartDate  = $request->input('installmentStartDate');
         $borrower->userId = Auth::id();
         return $borrower->save();
+    }
+
+    public function borrower($id){
+       $borrower = Borrowlist::find($id);
+       $installments = installment::where("borrowId","=",$id)
+       ->get();
+       return ['borrower'=>$borrower,'installments'=>$installments];
     }
 
 }
