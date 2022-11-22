@@ -6,7 +6,6 @@ use PHPUnit\Framework\TestCase;
 use App\Http\Controllers\BorrowerController;
 use App\Models\User;
 use Faker\Generator;
-use App\Models\User;
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Notification;
@@ -22,7 +21,6 @@ class BorrowerTest extends TestCase
     {
         $user = User::find(7);
         $this->be($user);
-
         $borrower = [
             'name1' => 'Vishnu',
             'email' => 'email@yahoo.com',
