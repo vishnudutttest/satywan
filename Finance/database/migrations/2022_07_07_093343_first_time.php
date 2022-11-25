@@ -28,7 +28,7 @@ class FirstTime extends Migration
             $table->timestamps();
         });
 
-        Schema::create('Installment',function (Blueprint $table){
+        Schema::create('installment',function (Blueprint $table){
             $table->id();
             $table->integer('borrowId');
             $table->integer('ownerId');

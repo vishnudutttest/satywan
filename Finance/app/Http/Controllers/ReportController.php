@@ -50,7 +50,7 @@ class ReportController extends Controller
         $unpaid = 0;
         $query = "SELECT SUM(installmentAmount) as total, (
             CASE WHEN paidStatus = 1 THEN 'Paid' ELSE 'Unpaid' END ) AS `Status` 
-            FROM `Installment` 
+            FROM `installment` 
            WHERE installmentDate between '{$start_date}' AND '{$end_date}' GROUP BY paidStatus  ORDER by paidStatus DESC;";
         $report = DB::Select($query);
        
