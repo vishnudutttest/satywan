@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;500;600;700&display=swap);
+
+#addnew{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+}
+#addNewBorrow{
+    position: relative;
+    top: -30px;
+}
+#name1{
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+    width: 83%;
+    font-size: 15px;
+    font-weight: 500;
+}
+#email1{
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+    width: 83%;
+    font-size: 15px;
+    font-weight: 500;
+}
+#phone{
+    position: relative;
+    
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 76%;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 100px;
+}
+#address{
+    margin-left: 126px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 500
+}
+#AmountGiven{
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 40px;
+    width: 83%;
+}
+#no_of_installment{
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+    width: 83%;
+    font-size: 15px;
+    font-weight: 500
+}
+#intallmentType{
+    margin-top: 10px;
+    margin-left: 77px;
+    border-radius: 10px;
+    width: 109%;
+    font-size: 15px;
+    font-weight: 500
+}
+#installmentAmount{
+    margin-left: 49px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 92%;
+    font-size: 15px;
+    font-weight: 500
+}
+#installmentStartDate{
+    margin-left: 40px;
+    width: 83%;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500
+}
+#form3{
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+#form4{
+    position: absolute;
+    left: 50%;
+    top: 17%;
+}
+#form5{
+    position: absolute;
+    left: 50%;
+    top: 36%;
+}
+#form6{
+    position: absolute;
+    left: 50%;
+    top: 54%;
+}
+#addButton {
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: rgba(23, 53, 34, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(238, 130, 81, 0.15) 0 2px 4px,rgba(31, 31, 31, 0.15) 0 4px 8px,rgba(238, 130, 81, 0.15) 0 8px 16px,rgba(228, 228, 228, 0.15) 0 16px 32px;
+    color: rgb(31, 87, 31);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 150px;
+  }
+  #addButton:hover {
+    box-shadow: rgba(48, 65, 55, 0.35) 0 -25px 18px -14px inset,rgba(49, 58, 52, 0.25) 0 1px 2px,rgba(247, 247, 247, 0.25) 0 2px 4px,rgba(32, 32, 32, 0.25) 0 4px 8px,rgba(12, 12, 12, 0.25) 0 8px 16px,rgba(49, 49, 49, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+@media screen and (max-width: 902px){
+    @import url(https://fonts.googleapis.com/css2?family=Baskervville&display=swap);
+#addnew{
+    font-family: 'Baskervville', serif;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+    min-height: 600px;
+}
+#addNewBorrow{
+    position: relative;
+    top: -30px;
+}
+#name1 {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
+#email{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
+#phone{
+    position: relative;
+    margin-left: 0px;
+    
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500
+}
+#address{
+    margin-left: 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500
+}
+#AmountGiven{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500
+}
+#no_of_installment{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500
+}
+#intallmentType{
+    margin-left: 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500
+}
+#installmentAmount{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 500
+}
+#installmentStartDate{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 500
+}
+#form1{
+    position: relative;
+    left: 0px;
+}
+#form3{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#form4{
+    position: relative;
+    left:0;
+    top: 0;
+}
+#form5{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#form6{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+}
