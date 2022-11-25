@@ -9,7 +9,7 @@ class installment extends Model
 {
     use HasFactory;
 
-    protected $table = "installment";
+    protected $table = "Installment";
 
     public function borrower()
     {
