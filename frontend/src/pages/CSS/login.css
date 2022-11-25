@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;500;600;700&display=swap);
+
+#loginForm{
+    font-family: 'Cabin', sans-serif;
+}
+
+#password{
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 90%;
+    margin-left: 10%;
+}
+#email{
+    font-size: 19px;
+    width:90%;
+    margin-left:10%;
+}
+#Label{
+    font-size: 19px;
+    font-family: 'Cabin', sans-serif;
+}

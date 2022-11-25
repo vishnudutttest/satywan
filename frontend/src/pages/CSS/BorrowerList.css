@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css2?family=Arimo:wght@100;200;300;400;500;600;700&display=swap);
+
+h3{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+#filterBox{
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+#filterdate{
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+#FillterButton {
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: rgba(23, 53, 34, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(238, 130, 81, 0.15) 0 2px 4px,rgba(31, 31, 31, 0.15) 0 4px 8px,rgba(238, 130, 81, 0.15) 0 8px 16px,rgba(228, 228, 228, 0.15) 0 16px 32px;
+  color: rgb(31, 87, 31);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 30px;
+}
+
+#FillterButton:hover {
+  box-shadow: rgba(48, 65, 55, 0.35) 0 -25px 18px -14px inset,rgba(49, 58, 52, 0.25) 0 1px 2px,rgba(247, 247, 247, 0.25) 0 2px 4px,rgba(32, 32, 32, 0.25) 0 4px 8px,rgba(12, 12, 12, 0.25) 0 8px 16px,rgba(49, 49, 49, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+@import url(https://fonts.googleapis.com/css2?family=Arimo:wght@100;200;300;400;500;600;700&display=swap);
+h2{
+   margin: 10px;
+font-family: 'Arimo', sans-serif;
+font-size: 20px;
+font-weight: 500; 
+}
+h1{
+ margin: 0px;
+font-family: 'Arimo', sans-serif;
+font-size: 25px;
+font-weight: 500; 
+}
+
+ #tableBody{
+   font-size: 16px;
+  
+ }
+
+ #checkBox{
+    border-radius: 3px;
+ }
+
+
+ @media screen and (max-width: 593px) {
+    #FillterButton{
+    margin-left: 60px;
+    margin-top: 10px;
+    }
+ }
+
+ @media screen and (max-width: 360px) {
+    #FillterButton{
+    margin-left: 6px;
+    }
+    #table{
+      width: 250px;
+      overflow: scroll;
+   }
+ }
+ @media screen and (max-width: 538px) {
+    #FillterButton{
+    margin-left: 58px;
+    margin-top: 10px;
+    }
+   #table{
+      width: 340px;
+      overflow: scroll;
+   }
+ }

@@ -55,16 +55,16 @@ const Login = () => {
                 {/* Validation Errors */}
                 <AuthValidationErrors className="mb-4" errors={errors} />
 
-                <form onSubmit={submitForm}>
+                <form onSubmit={submitForm}
+                       id='loginForm' >
                     {/* Email Address */}
-                    <div>
+                    <div >
                         <Label htmlFor="email">Email</Label>
 
                         <Input
                             id="email"
                             type="email"
                             value={email}
-                            className="block mt-1 w-full"
                             onChange={event => setEmail(event.target.value)}
                             required
                             autoFocus
@@ -79,7 +79,6 @@ const Login = () => {
                             id="password"
                             type="password"
                             value={password}
-                            className="block mt-1 w-full"
                             onChange={event => setPassword(event.target.value)}
                             required
                             autoComplete="current-password"
