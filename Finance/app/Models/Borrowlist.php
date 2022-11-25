@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Borrowlist extends Model
 {
+    protected $table = "BorrowLists";
     use HasFactory;
 }
