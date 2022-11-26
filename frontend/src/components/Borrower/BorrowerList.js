@@ -5,7 +5,6 @@ import NavLink from '@/components/NavLink'
 
 
 
-
 const BorrowerList = (props) => {
     
     const router = useRouter();
@@ -99,8 +98,15 @@ const BorrowerList = (props) => {
     </thead>
     <tbody className=''>
       {Borrowers.map(val=>( <tr key={val.id} >
+
        
         <td className={tdclass}><NavLink
+
+        <th scope="row" className={ftd}>
+              {val.id}
+        </th>
+        <td className={tdclass}>  <NavLink
+
             href={"/borrower/"+val.id }
             >{val.name}
             </NavLink>

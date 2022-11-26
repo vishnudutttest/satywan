@@ -6,11 +6,18 @@ const Borrowerprofile =()=>{
     const { bid } = router.query
 
     return (<>
+
   
     <div>
         <BorrowerProfile id={bid}></BorrowerProfile>
 
   </div>
+
+    <h2>All Details</h2>
+    <div>
+        <BorrowerProfile id={bid}></BorrowerProfile>
+    </div>
+
     </>)
 }
 

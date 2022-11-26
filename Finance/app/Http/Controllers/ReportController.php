@@ -11,6 +11,14 @@ class ReportController extends Controller
 {
     public function DashboardReport()
     {
+
+
+        $query = "SELECT SUM(installmentAmount) as total, (
+             CASE WHEN paidStatus = 1 THEN 'Paid' ELSE 'Unpaid' END ) AS Schedules 
+             FROM `installment` 
+            WHERE installmentDate = CURDATE() GROUP BY paidStatus;";
+        $report = DB::Select($query);
+
         $retrun['today'] = $this->todayReport();
         $retrun['week'] = $this->thisWeekReport();
         $retrun['month'] = $this->thisMonthReport();
@@ -19,6 +27,7 @@ class ReportController extends Controller
 
     public function todayReport()
     {
+
         /*$query = "SELECT SUM(installmentAmount) as total, (
             CASE WHEN paidStatus = 1 THEN 'Paid' ELSE 'Unpaid' END ) AS Schedules 
             FROM `installment` 
@@ -27,12 +36,24 @@ class ReportController extends Controller
         $report = $this->reportBetweenDates($start ,$start);
         //$report = DB::Select($query);
         return $report;
+
+        $query = "SELECT SUM(installmentAmount) as total, (
+            CASE WHEN paidStatus = 1 THEN 'Paid' ELSE 'Unpaid' END ) AS Schedules 
+            FROM `installment` 
+           WHERE installmentDate = CURDATE() GROUP BY paidStatus;";
+       $report = DB::Select($query);
+       return $report[0];
+
     }
 
     public function thisWeekReport()
     {
         $week = $this->x_week_range2(date("Y-m-d"));
+
         $report = $this->reportBetweenDates($week[0] ,$week[1]);
+
+        $report = $this->reportBetweenDates($week[0] ,$week[0]);
+
         return $report;
     }
 
@@ -46,6 +67,7 @@ class ReportController extends Controller
     }
 
     public function reportBetweenDates($start_date,$end_date){
+
         $paid = 0;
         $unpaid = 0;
         $query = "SELECT SUM(installmentAmount) as total, (
@@ -61,6 +83,15 @@ class ReportController extends Controller
             $unpaid = $report[1]->total;
         }
         return ['paid'=>$paid,'unpaid'=>$unpaid];
+
+        echo $query = "SELECT SUM(installmentAmount) as total, (
+            CASE WHEN paidStatus = 1 THEN 'Paid' ELSE 'Unpaid' END ) AS Schedules 
+            FROM `installment` 
+           WHERE installmentDate between '{$start_date}' AND '{$end_date}' GROUP BY paidStatus;";
+       $report = DB::Select($query);
+       echo "<br>";
+       return $report;
+
     }
 
     private function x_week_range2($date) {
