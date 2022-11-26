@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;500;600;700&display=swap);
+
+#bTable{
+    position: absolute;
+    top:200px;
+    left:11%;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+
+}
+#bEmail{
+    position: absolute;
+    left: 120%;
+    top: 0px;
+    width: 400px;
+}
+
+#bPhone{
+    position: absolute;
+    left: 120%;
+    top: 20%;
+    width: 340px;
+
+}
+#bdtail{
+    padding-left: 80px;  
+}
+#bdtail1{
+    padding-left: 172px;  
+}
+#bdtail2{
+    padding-left: 30px;  
+}
+#insalist{
+    position: relative;
+    top: 190px;
+    left: 10%;
+    width: 80%;  
+}
+#bAddress{
+   position: relative;
+   top: 2px;
+}
+#bCity{
+    position: relative;
+    top: 5px;
+}
+#bAmount{
+    position: relative;
+    top: 5px;
+}
+#bPaid{
+    position: relative;
+    top: 5px;
+}
+#bBalance{
+    position: relative;
+    top: 5px;
+}
+
+
+
+
+@media screen and (max-width: 640px){
+
+    #bTable{
+        position: absolute;
+        top:200px;
+        left:2%;
+        font-size: 18px;
+        font-family: 'Cabin', sans-serif;
+       
+    
+    }
+    #bEmail{
+        position: relative;
+        left: 0%;
+        width: 0px;
+        margin-bottom: 5px;
+    }
+    #bName{
+        font-size: 22px;
+    }
+    #bPhone{
+        position: relative;
+        left: 0%;
+        top: 5px;
+    
+    }
+    #bdtail{
+        padding-left: 14px;
+        position: relative;
+        right: 14px;
+    }
+    #bdtail1{
+        padding-left: 14px;
+        position: relative;
+        right: 14px;
+    }
+    #bdtail2{
+        padding-left: 0px;  
+    }
+    #tablePersonal{
+        width: 102%;
+        overflow: scroll;
+     }
+     #insalist{
+        position: relative;
+        top: 220px;
+        left: 2%;
+        width: 90%;  
+    }
+    #bAddress{
+       position: relative;
+       top: 5px;
+    }
+    #bCity{
+        position: relative;
+        top: 5px;
+    }
+    #bAmount{
+        position: relative;
+        top: 5px;
+    }
+}
+@media screen and (max-width: 351px){
+    #insalist{
+        position: relative;
+        top: 260px;
+        left: 2%;
+        width: 90%;  
+    }
+}

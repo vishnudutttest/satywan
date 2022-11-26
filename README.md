@@ -1,2 +1,0 @@
-# satywan
- Satywan Project

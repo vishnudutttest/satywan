@@ -8,9 +8,9 @@ const Borrower = () => {
     return (
         <AppLayout
             header={
-                <h2 className="font-semibold text-xl text-gray-800 leading-tight">
+                <h1 >
                     Borrower
-                </h2>
+                </h1>
             }>
             <Head>
                 <title>Finace - Add Borrower</title>
@@ -18,7 +18,7 @@ const Borrower = () => {
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="p-6 bg-white border-b border-gray-200">
+                        <div className="p-0 bg-white border-b border-gray-200">
                           <InstallmentList ></InstallmentList>
                         </div>
                     </div>

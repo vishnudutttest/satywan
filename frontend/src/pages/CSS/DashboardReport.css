@@ -1,0 +1,169 @@
+#reportBoxDaily{
+    background-color: rgb(188, 190, 181);
+    width: 300px;
+    color: white;
+    position: relative;
+    top: 4px;
+    left: 10%;
+    
+}
+#reportBoxDailyCollection{
+    background-color: rgb(238, 238, 238);
+}
+#reportBoxWeek{
+    background-color: rgb(188, 190, 181);
+    width: 300px;
+    color: white;
+    position: relative;
+    top: -169px;
+    left: 30%;
+    margin-left: 10%;
+}
+@import url(https://fonts.googleapis.com/css2?family=Arimo:wght@100;200;300;400;500;600;700&display=swap);
+h2{
+    margin: 0px;
+font-family: 'Arimo', sans-serif;
+font-size: 20px;
+font-weight: 500; 
+}
+h1{
+  margin: 0px;
+font-family: 'Arimo', sans-serif;
+font-size: 25px;
+font-weight: 500; 
+}
+
+#reportBackground{
+  
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 25px;
+    background-color: white;
+}
+#reportBoxMonth{
+     background-color: rgb(80, 116, 133);
+    width: 300px;
+    color: white;
+    position: relative;
+    top: -341px;
+    left: 50%;
+    margin-left: 20%;
+
+}
+@media screen and (max-width: 1139px) {
+    #reportBoxDaily{
+        background-color: rgb(48, 117, 39);
+        width: 300px;
+        color: white;
+        position: relative;
+        top: 4px;
+        left: 25%;
+        
+    }
+    #reportBoxDailyCollection{
+        background-color: rgb(238, 238, 238);
+       
+    
+    }
+    #reportBoxWeek{
+        background-color: rgb(106, 109, 105);
+        width: 300px;
+        color: white;
+        position: relative;
+        top: 10px;
+        left: 15%;
+        margin-top: 20px;
+        
+        
+    
+    }
+    
+    @import url(https://fonts.googleapis.com/css2?family=Arimo:wght@100;200;300;400;500;600;700&display=swap);
+    h2{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+     }
+    
+    #reportBackground{
+       
+        font-size: 18px;
+        padding-top: 10px;
+        min-height: 650px;
+        margin-right: 20px;
+        padding-left: 25px;
+        background-color: white;
+    }
+    #reportBoxMonth{ background-color: rgb(48, 117, 39);
+        width: 300px;
+        color: white;
+        position: relative;
+        top: 10px;
+        left: 5%;
+        margin-top: 20px;
+       
+    
+    }
+
+
+
+
+
+
+
+
+   
+  }
+
+
+  @media screen and (max-width: 490px) {
+    #reportBoxDaily{
+        background-color: rgb(48, 117, 39);
+        width: 200px;
+        color: white;
+        position: relative;
+        top: 10px;
+        left: 25%;
+        
+    }
+    #reportBoxDailyCollection{
+        background-color: rgb(238, 238, 238);
+       
+    
+    }
+    #reportBoxWeek{
+        background-color: rgb(48, 117, 39);
+        width: 200px;
+        color: white;
+        position: relative;
+        top: 17px;
+        left: 15%;
+        
+        
+    
+    }
+    @import url(https://fonts.googleapis.com/css2?family=Arimo:wght@100;200;300;400;500;600;700&display=swap);
+    h2{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+     }
+    
+    #reportBackground{
+        font-size: 18px;
+        padding-top: 7px;
+        padding-left: 25px;
+        width: 400px;
+        min-height: 700px;
+        margin-right: 20px;
+        background: linear-gradient(90deg, rgba(255,253,253,1) 0%, rgba(255,255,255,1) 0%, rgba(200,200,200,1) 100%)
+    }
+    #reportBoxMonth{ background-color: rgb(48, 117, 39);
+        width: 200px;
+        color: white;
+        position: relative;
+        top: 25px;
+        left: 5%;
+       
+    
+    }
+
+}
