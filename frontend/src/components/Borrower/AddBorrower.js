@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 
 const AddBrrower = ()=>{
-    const elenames = ['name1','email','phone','address','AmountGiven','no_of_installment','intallmentType','installmentAmount','installmentStartDate','Paid_Amount','Balance']
+    const elenames = ['name1','email','phone','address','AmountGiven','no_of_installment','intallmentType','installmentAmount','installmentStartDate']
     const [formdata,Setformdata] = useState({name1:""});
     const router = useRouter();
     

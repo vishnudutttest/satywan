@@ -87,7 +87,6 @@ const BorrowerList = (props) => {
     <table className="border-collapse table-auto w-full text-sm"  >
     <thead id='tableHead'>
       <tr>
-        <th scope="col" className={thclass}>remove</th>
         <th scope="col" className={thclass}>
            Name
         </th>
@@ -100,8 +99,7 @@ const BorrowerList = (props) => {
     </thead>
     <tbody className=''>
       {Borrowers.map(val=>( <tr key={val.id} >
-        <th scope="row" className={ftd}>1
-        </th>
+       
         <td className={tdclass}><NavLink
             href={"/borrower/"+val.id }
             >{val.name}

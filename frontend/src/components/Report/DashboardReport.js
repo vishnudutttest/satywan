@@ -14,7 +14,7 @@ const DashboardReport =()=>{
     },[]);
     return (<>
     <div id="reportBackground">
-    <h2>Reports</h2>
+    <h2 id='report'>Reports</h2>
     <div >
         <div  >
             <div className="block rounded-lg shadow-lg bg-white max-w-sm text-center"id="reportBoxDaily">
@@ -25,8 +25,8 @@ const DashboardReport =()=>{
                 <h5 className="text-gray-900 text-xl font-medium mb-2"> </h5>
                 <p className="text-gray-700 text-base mb-4">
             
-                    Collection : Rs 1000 <br />
-                    Collected :  Rs 9500
+                    Collection : Rs {Reports?.today?.paid} <br />
+                    Collected :  Rs {Reports?.today?.unpaid}
                 </p>
                 
                 </div>
@@ -42,8 +42,8 @@ const DashboardReport =()=>{
                 <h5 className="text-gray-900 text-xl font-medium mb-2"> </h5>
                 <p className="text-gray-700 text-base mb-4">
             
-                    Collection : Rs 10000 <br />
-                    Collected :  Rs 9500
+                    Collection : Rs {Reports?.week?.paid} <br />
+                    Collected :  Rs {Reports?.week?.paid}
                 </p>
                 
                 </div>
@@ -59,8 +59,8 @@ const DashboardReport =()=>{
                 <h5 className="text-gray-900 text-xl font-medium mb-2"> </h5>
                 <p className="text-gray-700 text-base mb-4">
             
-                    Collection : Rs 10000<br />
-                    Collected :  Rs 9500
+                    Collection : Rs {Reports?.month?.paid}<br />
+                    Collected :  Rs {Reports?.month?.paid}
                 </p>
                 
                 </div>
